@@ -1,0 +1,24 @@
+Documentation within :root/src/comp/component 
+
+1. Line Tag
+
+	-- note {
+		All styling was put on index.css
+	}
+
+	-- line__tag
+
+	-- line__tag-cover-right
+	-- line__tag-cover-left
+	
+	--.line__primaryvariant
+
+	-- line__margintwo
+
+	-- syntax-example {
+
+		<div className="line__tag-cover-right">
+			<div className="line__tag line__margintwo"></div>
+		</div>
+
+	}

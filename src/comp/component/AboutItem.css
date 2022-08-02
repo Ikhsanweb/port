@@ -1,0 +1,53 @@
+ /*==================== Mobile Devices ====================*/
+
+.aboutme__card {
+	background-color: var(--color-bg);
+	height: 10rem;
+	width: 100%;
+	border-width: 3px;
+	border-style: solid;
+	border-color: var(--color-primary-variant);
+	border-radius: 15px;
+	padding: 2rem;
+	margin-bottom: 2rem;
+}
+
+.aboutme__card > :first-child {
+	font-size: 2rem;
+	color: var(--color-primary);
+}
+
+.aboutme__card > h5 {
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--color-primary);
+}
+
+.aboutme__card > small {
+	color: var(--color-primary);
+	font-weight: 600;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.aboutme__card {
+		background-color: var(--color-bg);
+		height: 10rem;
+		width: 100%;
+		border-width: 3px;
+		border-style: solid;
+		border-color: var(--color-primary-variant);
+		border-radius: 15px;
+		padding: 2rem;
+		margin-bottom: unset;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.aboutme__card {
+		background-color: var(--color-bg);
+		border-width: 3px;
+		border-style: solid;
+		border-color: var(--color-primary-variant);
+	}
+}

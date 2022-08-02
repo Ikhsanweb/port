@@ -1,0 +1,135 @@
+.navbar {
+	font-size: 2rem;
+	top: 0;
+	right: 0;
+	left: unset;
+	bottom: unset;
+	display: none;
+}
+
+.navbar a:not(:last-child) {
+	display: none;
+	font-size: 1rem;
+	transition: var(--transition);
+}
+
+.navbar-menu {
+	display: block;
+	transition: unset;
+	font-size: 2rem;
+}
+.navbar::after{
+	display: none;
+	transition: var(--transition);
+}	
+
+	.navbar{
+		display: none;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 0.8rem;
+		position: absolute;
+		left: 0;
+		bottom: 4rem;
+		z-index: 5;
+	}
+
+	.navbar::after{
+		content: "";
+		width: 1px;
+		height: 4rem;
+		background: var(--color-primary);
+	}
+
+	.navbar a:hover {
+		font-size: 2rem;
+	}
+
+	.navbar a.navActive {
+		font-size: 2rem;
+		color: var(--color-dark);	
+	}
+
+
+/*.navbar.responsive {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+  	padding: 2rem 5%;
+  	background-color: var(--color-primary-variant);
+	transition: var(--transition);
+}
+
+.navbar.responsive a.navbar-menu {
+	position: absolute;
+	right: 5%;
+	top: 0;
+	margin: 0 auto;
+  	padding-top: 2rem;
+	font-size: 2rem;
+}
+
+.navbar.responsive a {
+	text-align: left;
+	display: flex;
+}
+
+.navbar.responsive > .navbar-menu {
+	font-size: 2rem;
+}
+*/
+/*==================== MEDIA QUERY (MEDIUM DEVICES) ====================*/
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		font-size: 1.5rem;
+	}
+}
+
+/*==================== MEDIA QUERY (SMALL DEVICES) ====================*/
+
+@media only screen and (min-width: 1024px) {
+
+	/*.navbar a:hover {*/
+		/*font-size: 1rem;*/
+	/*}*/
+	.navbar{
+		display: none;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 0.8rem;
+		position: absolute;
+		left: 0;
+		bottom: 4rem;
+		z-index: 5;
+	}
+
+	.navbar::after{
+		content: "";
+		width: 1px;
+		height: 4rem;
+		background: var(--color-primary);
+	}
+
+	.navbar a:hover {
+		font-size: 2rem;
+	}
+
+	.navbar a.navActive {
+		font-size: 2rem;
+		color: var(--color-dark);	
+	}
+
+	.navbar-menu {
+		/*display: none;*/
+		font-size: 1rem;
+	}
+
+}
+
+@media (hover: none) {
+	.navbar a:hover {font-size: inherit;}
+}

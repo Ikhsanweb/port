@@ -1,13 +1,213 @@
-body {
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./assets/fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("./assets/fonts/Poppins-Thin.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: floralwhite;
+  --color-bg-variant: burlywood;
+  --color-primary: crimson;
+  --color-primary-variant: coral;
+  --color-white: floralwhite;
+  --color-light: lemonchiffon;
+  --color-dark: darkslategray;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 95%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+}*/
+
+body {
+  font-family: "Poppins-Regular";
+  background: var(--color-bg);
+  color: var(--color-dark);
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/*==================== GENERAL STYLES ====================*/
+
+.container{
+  width: var(--container-width-sm);
+  margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+  min-height: 100vh;
+}
+section > h2, section > h5 {
+  text-align: center;
+  color: var(--color-dark);
+}
+
+section > h2 {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.text-dark {
+  color: var(--color-dark);
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-dark);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--color-dark);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.bg-green {
+  background-color: chartreuse;
+}
+
+.bg-blue {
+  background-color: cyan;
+}
+
+.bg-red {
+  background-color: crimson;
+}
+
+.bg-orange {
+  background-color: orangered;
+}
+
+/*==================== MEDIA QUERY (MEDIUM DEVICES) ====================*/
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/*==================== MEDIA QUERY (SMALL DEVICES) ====================*/
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: var(--container-width-lg);
+  }
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/*==================== LINE TAG ====================*/
+
+.line__tag-cover-right {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}
+
+.line__tag-cover-left {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.line__tag {
+  width: 8rem;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+
+.line__primaryvariant {
+  background-color: var(--color-primary-variant);  
+}
+
+.line__margintwo {
+  margin: 2rem 0;
 }

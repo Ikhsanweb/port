@@ -1,0 +1,146 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+
+.homeTitle {
+	display: flex;
+	flex-direction: column;
+	width: max-content;
+	height: max-content;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+
+.homeContent-wrapper {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	/*gap: 1rem;*/
+}	
+
+.homeTitleText {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.homeTitleText > h5 {
+	font-size: 0.7rem;
+	margin-top: -0.6rem;
+	text-align: left;
+}
+
+.homeTitleText > h2 {
+	font-size: 2rem;
+	text-align: left;
+	line-height: 2.5rem;
+	font-weight: 700;
+	color: crimson;
+}
+
+.homeTitleText > h4 {
+	font-size: 0.8rem;
+	text-align: right;
+	line-height: 1.1rem;
+	font-weight: 600;
+}
+
+.homeTitleText > h4:nth-child(4) {
+	margin-top: 1rem;
+}
+
+.homeTitleText > h4:nth-child(5) {
+	margin-bottom: 1rem;
+}
+
+.homeTitleLogo {
+	display: flex;
+	width: 240px;
+	height: 240px;
+	justify-content: center;
+	margin-top: -2rem;
+	margin-bottom: -2rem;
+}
+
+.homeLogo {
+	width: 100%;	
+}
+
+.homeContentTitle {
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+.homeContentTitle > h5 {
+	font-size: 1rem;
+} 
+
+
+
+@media only screen and (min-width: 768px) {
+	.homeTitle {
+		flex-direction: row;
+		width: 100%;
+		height: 50%;
+		margin-bottom: 0.25rem;
+	}
+
+	.homeTitleText > h4:nth-child(4) {
+		text-align: left;
+	}
+
+	.homeTitleText > h4:nth-child(5) {
+		text-align: left;
+	}
+
+	.homeTitleLogo {
+		width: 600px;
+		height: unset;
+	}
+
+	.homeTitleText > h5 {
+		font-size: 1.2rem;
+	}
+
+	.homeTitleText > h2 {
+		font-size: 3rem;
+		line-height: unset;
+		font-weight: 800;
+	}
+
+	.homeTitleText > h4 {
+		font-size: 2rem;
+		line-height: unset;
+		font-weight: 700;
+	}
+
+	.homeContent-wrapper {
+		grid-template-columns: 25% 25% 25% 25%;
+	}	
+}
+
+@media only screen and (min-width: 1024px) {
+	.homeTitleText > h5 {
+		font-size: 1rem;
+	}
+
+	.homeTitleText > h2 {
+		font-size: 2.5rem;
+		line-height: unset;
+		font-weight: 800;
+	}
+
+	.homeTitleText > h4 {
+		font-size: 1.5rem;
+		line-height: unset;
+		font-weight: 700;
+	}
+	
+}

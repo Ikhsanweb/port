@@ -1,0 +1,65 @@
+/*==================== MEDIA QUERY (SMALL DEVICES) ====================*/
+.portfolio__container {
+	background-color: white;
+	text-align: center;
+	height: 100%;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.1fr 1fr;
+}
+#portfolio {
+	height: 100%;
+	padding-top: 2rem;
+	/*background-color: coral;*/
+	margin-top: 0;
+}
+#portfolio .container {
+	width: 85%;
+}
+.portfolio__head {
+	grid-column: 1/3;
+	grid-row: 1/2;
+	display: flex;
+	align-items: center;
+}
+.portfolio__body {
+	grid-column: 1/3;
+	grid-row: 2/3;
+	/*background-color: hotpink;*/
+	padding: 2rem;
+}
+.portfolio__head-back {
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: coral;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.head-back-icon {
+	color: crimson;
+	font-size: 2rem;
+}
+.portfolio__head-title > h3 {
+	font-size: 1.25rem;
+	margin-left: 3rem;
+	font-weight: 700;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.portfolio__wrapper {
+		display: grid;
+		grid-template-columns: 49% 49%;
+		grid-gap: 2rem;
+	}	
+}
+
+@media only screen and (min-width: 1024px) {
+	.portfolio__wrapper {
+		display: grid;
+		grid-gap: 2rem;
+	}	
+}
