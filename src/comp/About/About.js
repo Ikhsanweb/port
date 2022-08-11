@@ -18,7 +18,7 @@ const About = () => {
 		>
 			<div className="aboutme__text">
 				<h3 className="aboutme__text-one">Hi, my name is Ikhsan</h3>
-				<h3 className="aboutme__text-two">I am a freelance <span>graphic designer</span>, <span>junior front-end</span> and <span>back-end developer</span> from Indonesia. Curently, I'm working on creating web design, banners, posters, certificates, frames, logos and many more. I`m also learning <span>React Native</span> to build Mobile Apps while strenghening my own portfolio.</h3>
+				<h3 className="aboutme__text-two">I am a freelance <span>graphic designer</span> and <span>junior fullstack developer</span> from Indonesia. Curently, I'm working on creating web design, banners, posters, certificates, frames, logos and many more. I`m also learning <span>React Native</span> to build Mobile Apps while strenghening my own portfolio.</h3>
 			</div>
 
 			<div className="aboutme__line" />

@@ -31,7 +31,7 @@ const PortfolioContent = () => {
 	}, [])
 
 	return (
-		<NextOneLayout
+		<NextOneLayout 
 			headTitle="PortfolioContent"
 		>
 			<div className="line__tag-cover-right">
@@ -45,6 +45,7 @@ const PortfolioContent = () => {
 						imgText={item.imgText}
 						imgId={item.specId}
 						imgParams={portfolioId}
+						clickDet={item.clickDet}
 					/>
 				)}
 			</div>

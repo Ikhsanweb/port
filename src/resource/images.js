@@ -1,7 +1,13 @@
-import POSTERA1 from '../assets/posA1.jpg'
-import POSTERA2 from '../assets/posA2.jpg'
 import POSTERB1 from '../assets/posB1.png'
-import POSTERC1 from '../assets/posC1.jpg'
+import POSTERB2 from '../assets/posB2.png'
+import POSTERB3 from '../assets/posB3.png'
+import POSTERB4 from '../assets/posB4.png'
+import POSTERB5 from '../assets/posB5.png'
+import POSTERC1 from '../assets/posC1.png'
+import POSTERC2 from '../assets/posC2.png'
+import POSTERC3 from '../assets/posC3.png'
+import POSTERC4 from '../assets/posC4.png'
+import POSTERC5 from '../assets/posC5.png'
 
 import CERTIFICATEA1 from '../assets/certA1.png'
 import CERTIFICATEB1 from '../assets/certB1.png'
@@ -15,15 +21,21 @@ import FRAMEA4 from '../assets/fraA4.png'
 import FRAMEA5 from '../assets/fraA5.png'
 
 import LOGOA1 from '../assets/logoA1.png'
-import LOGOB1 from '../assets/logoB1.jpg'
-import LOGOB2 from '../assets/logoB2.jpg'
-import LOGOB3 from '../assets/logoB3.jpg'
+import LOGOB1 from '../assets/logoB1.png'
+import LOGOB2 from '../assets/logoB2.png'
+import LOGOB3 from '../assets/logoB3.png'
 
 export default {
-	POSTERA1,
-	POSTERA2,
 	POSTERB1,
+	POSTERB2,
+	POSTERB3,
+	POSTERB4,
+	POSTERB5,
 	POSTERC1,
+	POSTERC2,
+	POSTERC3,
+	POSTERC4,
+	POSTERC5,
 	CERTIFICATEA1,
 	CERTIFICATEB1,
 	CERTIFICATEC1,

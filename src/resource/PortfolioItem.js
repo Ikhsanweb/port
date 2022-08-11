@@ -2,15 +2,26 @@ import React from 'react'
 import images from './images.js'
 import icons from './icons.js'
 
-// import {FaAward} from 'react-icons/fa'
-// import {FiUsers} from 'react-icons/fi'
-// import {VscFolderLibrary} from 'react-icons/vsc'
-
 const posterIsClick = true
 const certificateIsClick = true 
 const cVIsClick= true
 const framesIsClick = true
 const logoIsClick = true
+
+const posterDetClick1 = true
+const posterDetClick2 = true
+const posterDetClick3 = true
+
+const certDetClick1 = true
+const certDetClick2 = true
+const certDetClick3 = true
+const certDetClick4 = true
+
+const frameDetClick1 = true
+
+const logoDetClick1 = true
+const logoDetClick2 = true
+
 
 
 const portfolioItems = [
@@ -19,24 +30,9 @@ const portfolioItems = [
 		click: posterIsClick,
 		itemTitle: "Poster",
 		itemSubtitle: "Have a good looking Poster ?",
-		itemImg: images.POSTERA1,
+		itemImg: images.POSTERC1,
 		itemPath: "poster",
 		itemContent: [
-			{
-				specId: 11,
-				imgContent: [
-					{
-						deepId: 111,
-						deepImg: images.POSTERA1,
-					},
-					{
-						deepId: 112,
-						deepImg: images.POSTERA2,
-					},
-				],
-				imgText: "Koleksi poster 1",
-				fullText: "", 
-			},
 			{
 				specId: 12,
 				imgContent: [ 
@@ -44,8 +40,25 @@ const portfolioItems = [
 						deepId: 113,
 						deepImg: images.POSTERB1,
 					},
+					{
+						deepId: 1132,
+						deepImg: images.POSTERB2,
+					},
+					{
+						deepId: 1133,
+						deepImg: images.POSTERB3,
+					},
+					{
+						deepId: 1134,
+						deepImg: images.POSTERB4,
+					},
+					{
+						deepId: 1135,
+						deepImg: images.POSTERB5,
+					},
 				],
 				imgText: "Poster National Idea Poster Competition",
+				clickDet: posterDetClick2,
 				fullText: "", 
 			},
 			{
@@ -55,8 +68,25 @@ const portfolioItems = [
 						deepId: 114,
 						deepImg: images.POSTERC1,
 					},
+					{
+						deepId: 1142,
+						deepImg: images.POSTERC2,
+					},
+					{
+						deepId: 1143,
+						deepImg: images.POSTERC3,
+					},
+					{
+						deepId: 1144,
+						deepImg: images.POSTERC4,
+					},
+					{
+						deepId: 1145,
+						deepImg: images.POSTERC5,
+					},
 				],
 				imgText: "Poster Writing Youth Competition",
+				clickDet: posterDetClick3,
 				fullText: "",
 			},
 		]
@@ -76,42 +106,22 @@ const portfolioItems = [
 						deepId: 115,
 						deepImg: images.CERTIFICATEA1,
 					},
-				],
-				imgText: "Contoh Model Sertifikat 1",
-				fullText: "",
-			},
-			{
-				specId: 22,
-				imgContent: [
 					{
 						deepId: 116,
 						deepImg: images.CERTIFICATEB1,
 					},
-				],
-				imgText: "Contoh Model Sertifikat 2",
-				fullText: "",
-			},
-			{
-				specId: 23,
-				imgContent: [
 					{
-						deepId: 117,
+						deepId: 116,
 						deepImg: images.CERTIFICATEC1,
 					},
-				],
-				imgText: "Contoh Model Sertifikat 3",
-				fullText: "", 
-			},
-			{
-				specId: 24,
-				imgContent: [
 					{
-						deepId: 118,
+						deepId: 116,
 						deepImg: images.CERTIFICATED1,
 					},
 				],
-				imgText: "Contoh Model Sertifikat 4",
-				fullText: "", 
+				imgText: "Contoh Model Sertifikat 1",
+				clickDet: certDetClick1,
+				fullText: "",
 			},
 		]
 	},
@@ -148,6 +158,7 @@ const portfolioItems = [
 					},
 				],
 				imgText: "Koleksi Frame Instagram",
+				clickDet: frameDetClick1,
 				fullText: "Rangkaian Frame untuk mengelola tampilan instagram", 
 			},
 		]
@@ -169,6 +180,7 @@ const portfolioItems = [
 					},
 				],
 				imgText: "Logo Portfolio",
+				clickDet: logoDetClick1,
 				fullText: "", 
 			},
 			{
@@ -188,6 +200,7 @@ const portfolioItems = [
 					},
 				],
 				imgText: "Logo Tahu Kress",
+				clickDet: logoDetClick2,
 				fullText: "", 
 			},
 		]
@@ -201,12 +214,12 @@ const aboutItems = [
 		id: 1,
 		aboutIcon: <icons.FaAward />,
 		aboutTitle: "Experience",
-		aboutSubtitle: "1+ Year Working",
+		aboutSubtitle: "2+ Year Graphic Design Freelancer",
 	},
 	{
 		id: 2,
 		aboutIcon: <icons.FaAward />,
-		aboutTitle: "Certificate",
+		aboutTitle: "Certification",
 		aboutSubtitle: "Certified Junior Backend Developer",
 	},
 ]
@@ -215,27 +228,27 @@ const expItems = [
 	{
 		id: 1,
 		expItemTitle: "Javascript",
-		expItemRank: "Beginner",
+		expIcon: <icons.FaJs className="expIcon" />,
 	},
 	{
 		id: 2,
 		expItemTitle: "React Js",
-		expItemRank: "Beginner",
+		expIcon: <icons.FaReact className="expIcon" />,
 	},
 	{
 		id: 3,
 		expItemTitle: "React Native",
-		expItemRank: "Beginner",
+		expIcon: <icons.FaReact className="expIcon" />,
 	},
 	{
 		id: 4,
 		expItemTitle: "Responsive Web",
-		expItemRank: "Beginner",
+		expIcon: <icons.AiFillHtml5 className="expIcon" />,
 	},
 	{
-		id: 4,
+		id: 5,
 		expItemTitle: "Node Js",
-		expItemRank: "Beginner",
+		expIcon: <icons.FaNodeJs className="expIcon" />,
 	},
 ]
 
@@ -252,12 +265,12 @@ const socmedItems = [
 		socmedName: "ikhsanweb",
 		socmedLink: "https://github.com/ikhsanweb",
 	},
-	{
-		id: 3,
-		socmedIcon: <icons.AiFillBehanceCircle className="contact__icon" />,
-		socmedName: "Ikhsan",
-		socmedLink: "https://www.behance.net/muhammadikhsan43",
-	}, 
+	// {
+	// 	id: 3,
+	// 	socmedIcon: <icons.AiFillBehanceCircle className="contact__icon" />,
+	// 	socmedName: "Ikhsan",
+	// 	socmedLink: "https://www.behance.net/muhammadikhsan43",
+	// }, 
 	{
 		id: 4,
 		socmedIcon: <icons.AiFillLinkedin className="contact__icon" />,

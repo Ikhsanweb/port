@@ -20,13 +20,13 @@ const PortfolioContentDetail = () => {
 	React.useEffect(() => {
 
 		if (portfolioId == 1) {
-			if (imgPortId == 11) {
+			if (imgPortId == 12) {
 				setPortfolioContentDetailContent(portfolioItems.portfolioItems[0].itemContent[0])
-			} else if (imgPortId == 12) {
-				setPortfolioContentDetailContent(portfolioItems.portfolioItems[0].itemContent[1])	
 			} else if (imgPortId == 13) {
-				setPortfolioContentDetailContent(portfolioItems.portfolioItems[0].itemContent[2])	
+				setPortfolioContentDetailContent(portfolioItems.portfolioItems[0].itemContent[1])	
 			} else if (imgPortId == 14) {
+				setPortfolioContentDetailContent(portfolioItems.portfolioItems[0].itemContent[2])	
+			} else if (imgPortId == 11) {
 				setPortfolioContentDetailContent(portfolioItems.portfolioItems[0].itemContent[3])	
 			} else if (imgPortId == 15) {
 				setPortfolioContentDetailContent(portfolioItems.portfolioItems[0].itemContent[4])	

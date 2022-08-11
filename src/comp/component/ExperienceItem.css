@@ -10,12 +10,22 @@
 
 .experienceItem__title {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
+	align-items: space-between;
+	/*text-align: center;*/
 }
 
 .experienceItem__title > h3 {
 	font-size: 1.1rem;
 	font-weight: 600;
+	text-align: left;
+}
+
+.expIcon {
+	font-size: 3rem;
+	color: crimson;
+	/*text-align: center;*/
 }
 
 .experienceItem__bar {
@@ -49,6 +59,8 @@
 	margin-top: 0.25rem;
 }
 
+
+
 .experienceItem-widtha {
 	width: 72%;
 }
@@ -64,3 +76,13 @@
 .experienceItem-widthd {
 	width: 48%;
 }
+
+@media only screen and (min-width: 768px) {
+	.experienceItem__title {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+	}
+}
+

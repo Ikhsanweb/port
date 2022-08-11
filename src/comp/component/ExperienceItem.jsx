@@ -1,7 +1,7 @@
 import React from 'react'
 import './ExperienceItem.css'
 
-const ExperienceItem = ({ expItemTitle, expItemRank }) => {
+const ExperienceItem = ({ expItemTitle, expIcon }) => {
 
 	// const [expItemBarFillControler, setExpItemBarFillControler] = React.useState(expItemBarFill)
 
@@ -9,7 +9,7 @@ const ExperienceItem = ({ expItemTitle, expItemRank }) => {
 		<div className="experienceItem">
 			<div className="experienceItem__title">
 				<h3>{expItemTitle}</h3>
-				<h3 className="experienceItem__rank-text">{expItemRank}</h3>
+				{expIcon}
 			</div> 
 			{/*<div className="experienceItem__bar">
 				<div className={expItemRank === "Beginner" ? "experienceItem__bar-fill experienceItem-widthd" : expItemRank === "Intermediate" ? "experienceItem__bar-fill experienceItem-widthc" : expItemRank === "Advance" ? "experienceItem__bar-fill experienceItem-widthb" : expItemRank === "Master" ? "experienceItem__bar-fill experienceItem-widtha" : "experienceItem__bar-fill" }></div>

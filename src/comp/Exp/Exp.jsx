@@ -27,7 +27,7 @@ const Exp = () => {
 					<ExperienceItem 
 						key={`expItem ${item.id}`}
 						expItemTitle={item.expItemTitle}
-						expItemRank={item.expItemRank}
+						expIcon={item.expIcon}
 					/>
 				)}
 			</div>
