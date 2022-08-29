@@ -28,13 +28,10 @@ const NextOneLayout = ({headTitle, children}) => {
 						<div className={ isNextNavClicked ? "nextOne__head-navbar-responsive-menu" : "nextOne__head-navbar-responsive-menu nextfalse" }>
 							<ul>
 								<li>
+									<Link to="/" replace={true}>Home</Link>
+								</li>
+								<li>
 									<Link to="/profile" replace={true}>Profile</Link>
-								</li>
-								<li>
-									<Link to="/portfolio" replace={true}>Portfolio</Link>
-								</li>
-								<li>
-									<Link to="/experience" replace={true}>Experience</Link>
 								</li>
 								<li>
 									<Link to="/contact" replace={true}>Contact Me</Link>

@@ -292,20 +292,20 @@ const homeContent = [
 		homeContentIcon: <icons.BsPersonFill className="homeContent-Icon" />,
 		homeContentLink: "About Me",
 	},
+	// {
+	// 	id: 2,
+	// 	linkTo: `experience`,
+	// 	homeContentIcon: <icons.BsFillArrowUpSquareFill className="homeContent-Icon" />,
+	// 	homeContentLink: "Skills",
+	// },
+	// {
+	// 	id: 3,
+	// 	linkTo: `portfolio`,
+	// 	homeContentIcon: <icons.VscFolderLibrary className="homeContent-Icon" />,
+	// 	homeContentLink: "Portfolio",
+	// },
 	{
 		id: 2,
-		linkTo: `experience`,
-		homeContentIcon: <icons.BsFillArrowUpSquareFill className="homeContent-Icon" />,
-		homeContentLink: "Skills",
-	},
-	{
-		id: 3,
-		linkTo: `portfolio`,
-		homeContentIcon: <icons.VscFolderLibrary className="homeContent-Icon" />,
-		homeContentLink: "Portfolio",
-	},
-	{
-		id: 4,
 		linkTo: `contact`,
 		homeContentIcon: <icons.TiContacts className="homeContent-Icon" />,
 		homeContentLink: "Contacts",
