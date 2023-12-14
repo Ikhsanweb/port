@@ -315,10 +315,35 @@ const homeContent = [
   },
 ];
 
+const projectItem = [
+  {
+    id: 1,
+    linkTo: `portfolio`,
+    img: images.POSTERC1,
+    projectName: 'Graphic Design',
+    isLink: true,
+  },
+  {
+    id: 2,
+    linkTo: `https://determined-cod-pumps.cyclic.app/`,
+    img: images.SANSHOP,
+    projectName: 'Sanshop (Online Shop)',
+    isLink: false,
+  },
+  {
+    id: 3,
+    linkTo: `https://miniguideweb.netlify.app`,
+    img: images.INFOGUIDE,
+    projectName: 'Minimized Info Guide',
+    isLink: false,
+  },
+];
+
 export default {
   portfolioItems,
   aboutItems,
   expItems,
   socmedItems,
   homeContent,
+  projectItem,
 };

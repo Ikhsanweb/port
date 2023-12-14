@@ -1,14 +1,17 @@
 // React Functional Component
 import React from 'react';
 import './Home.css';
-import { BsPersonFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+
+import CertA1 from '../../assets/certA1.png';
+import PosC5 from '../../assets/posC1.png';
 
 import PortfolioItem from '../../resource/PortfolioItem.js';
 import HomeContentFiller from '../../comp/component/homeContentFiller';
 
 // ------------------------------ Images ----------------------------
 import Logo from '../../assets/logoA1.png';
+import ProjectItem from '../../comp/component/ProjectItem';
 
 // ------------------------------ Home ------------------------------
 
@@ -43,12 +46,32 @@ const Home = () => {
         <div className="partiall">
           <div className="homeDown__line"></div>
           <h2 className="homeDown__h2">Projects</h2>
-          <a href="https://miniguideweb.netlify.app/" className="a-down">
-            <h3 className="homeDown__h3">Minimized Info Guide</h3>
-          </a>
-          <Link to="/portfolio" className="a-down">
-            <h3 className="homeDown__h3">Graphic Design</h3>
-          </Link>
+
+          <div className="project-items">
+            {PortfolioItem.projectItem.map((item) => (
+              <ProjectItem
+                key={item.id}
+                img={item.img}
+                linkTo={item.linkTo}
+                projectName={item.projectName}
+                isLink={item.isLink}
+              />
+            ))}
+            {/* <div className="project-item">
+              <Link to="/portfolio" className="project-item-link">
+                <div className="project-item-top">
+                  <img
+                    src={PosC5}
+                    alt="project-picture"
+                    className="project-picture"
+                  />
+                </div>
+                <div className="project-item-bottom">
+                  <span>Project Name</span>
+                </div>
+              </Link>
+            </div> */}
+          </div>
         </div>
       </div>
     </div>
