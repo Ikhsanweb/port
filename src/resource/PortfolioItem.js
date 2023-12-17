@@ -22,6 +22,10 @@ const frameDetClick1 = true;
 const logoDetClick1 = true;
 const logoDetClick2 = true;
 
+const graphicDesignDetClick = true;
+const sanshopDetClick = true;
+const minimizedInfoGuideDetClick = true;
+
 const portfolioItems = [
   {
     id: 1,
@@ -339,6 +343,39 @@ const projectItem = [
   },
 ];
 
+const projectItemAnim = [
+  {
+    id: 1,
+    click: graphicDesignDetClick,
+    itemTitle: 'Graphic Design',
+    itemSubtitle: 'Graphic Design Catalogue',
+    itemImg: images.POSTERC1,
+    isSingleLink: true,
+    isLink: true,
+    singleLink: 'portfolio',
+  },
+  {
+    id: 2,
+    click: sanshopDetClick,
+    itemTitle: '(Online Shop)',
+    itemSubtitle: 'Small Online Shop Prototype',
+    itemImg: images.SANSHOP,
+    isSingleLink: true,
+    isLink: false,
+    singleLink: 'https://determined-cod-pumps.cyclic.app/',
+  },
+  {
+    id: 3,
+    click: minimizedInfoGuideDetClick,
+    itemTitle: 'Minimized Info Guide',
+    itemSubtitle: 'Pocket mini info guide',
+    itemImg: images.INFOGUIDE,
+    isSingleLink: true,
+    isLink: false,
+    singleLink: 'https://miniguideweb.netlify.app',
+  },
+];
+
 export default {
   portfolioItems,
   aboutItems,
@@ -346,4 +383,5 @@ export default {
   socmedItems,
   homeContent,
   projectItem,
+  projectItemAnim,
 };

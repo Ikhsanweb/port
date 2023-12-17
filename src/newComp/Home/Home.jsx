@@ -12,6 +12,7 @@ import HomeContentFiller from '../../comp/component/homeContentFiller';
 // ------------------------------ Images ----------------------------
 import Logo from '../../assets/logoA1.png';
 import ProjectItem from '../../comp/component/ProjectItem';
+import ItemAnim from '../../comp/component/ItemAnim.jsx';
 
 // ------------------------------ Home ------------------------------
 
@@ -48,7 +49,7 @@ const Home = () => {
           <h2 className="homeDown__h2">Projects</h2>
 
           <div className="project-items">
-            {PortfolioItem.projectItem.map((item) => (
+            {/* {PortfolioItem.projectItem.map((item) => (
               <ProjectItem
                 key={item.id}
                 img={item.img}
@@ -56,7 +57,22 @@ const Home = () => {
                 projectName={item.projectName}
                 isLink={item.isLink}
               />
+            ))} */}
+
+            {PortfolioItem.projectItemAnim.map((item) => (
+              <ItemAnim
+                key={item.id}
+                click={item.click}
+                itemTitle={item.itemTitle}
+                itemSubtitle={item.itemSubtitle}
+                itemImg={item.itemImg}
+                itemId={item.id}
+                isLink={item.isLink}
+                isSingleLink={item.isSingleLink}
+                singleLink={item.singleLink}
+              />
             ))}
+
             {/* <div className="project-item">
               <Link to="/portfolio" className="project-item-link">
                 <div className="project-item-top">

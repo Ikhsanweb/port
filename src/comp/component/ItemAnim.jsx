@@ -4,7 +4,18 @@ import { Link } from 'react-router-dom';
 import './ItemAnim.css';
 
 const ItemAnim = memo(
-  ({ click, setClick, itemTitle, itemSubtitle, itemImg, itemId, itemPath }) => {
+  ({
+    click,
+    setClick,
+    itemTitle,
+    itemSubtitle,
+    itemImg,
+    itemId,
+    itemPath,
+    isSingleLink,
+    isLink,
+    singleLink,
+  }) => {
     const [isClick, setIsClick] = React.useState(click);
     return (
       <div
@@ -55,17 +66,45 @@ const ItemAnim = memo(
             >
               {itemSubtitle}
             </h3>
-            <Link to={`/portfolioContent/${itemId}`}>
-              <h3
-                className={
-                  isClick
-                    ? 'portfolio__body-item-down-true-explained-text2'
-                    : 'portfolio__body-item-down-true-explained-text2 portfalse'
-                }
-              >
-                Click Here
-              </h3>
-            </Link>
+            {isSingleLink ? (
+              isLink ? (
+                <Link to={singleLink}>
+                  <h3
+                    className={
+                      isClick
+                        ? 'portfolio__body-item-down-true-explained-text2'
+                        : 'portfolio__body-item-down-true-explained-text2 portfalse'
+                    }
+                  >
+                    Click Here
+                  </h3>
+                </Link>
+              ) : (
+                <a href={singleLink}>
+                  <h3
+                    className={
+                      isClick
+                        ? 'portfolio__body-item-down-true-explained-text2'
+                        : 'portfolio__body-item-down-true-explained-text2 portfalse'
+                    }
+                  >
+                    Click Here
+                  </h3>
+                </a>
+              )
+            ) : (
+              <Link to={`/portfolioContent/${itemId}`}>
+                <h3
+                  className={
+                    isClick
+                      ? 'portfolio__body-item-down-true-explained-text2'
+                      : 'portfolio__body-item-down-true-explained-text2 portfalse'
+                  }
+                >
+                  Click Here
+                </h3>
+              </Link>
+            )}
           </div>
         </div>
       </div>
