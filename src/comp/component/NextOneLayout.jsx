@@ -65,7 +65,7 @@ const NextOneLayout = ({headTitle, children}) => {
 							<AiFillLinkedin />
 						</a>
 						<a 
-							href="https://twitter.com/ikhsanPortfolio?t=Yu3YEIS7dl-MiMPtVLXDYg&s=08" 
+							href="https://twitter.com/" 
 							className="nextOne__footer-links-soc"
 						>
 							<FaTwitter />
